@@ -400,8 +400,8 @@ if "session_answered"    not in st.session_state:
 # ── CSS ───────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
-html, body, [class*="css"] {font-family:'Inter',sans-serif;color:#1A1A2E;}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+html, body, [class*="css"] {font-family:'IBM Plex Sans',sans-serif;color:#1A1A2E;}
 #MainMenu, footer, header {visibility:hidden;}
 .block-container {padding:1.5rem 2rem 3rem !important;max-width:1400px !important;}
 
@@ -426,9 +426,9 @@ html, body, [class*="css"] {font-family:'Inter',sans-serif;color:#1A1A2E;}
 .hero-title span {color:#2E86C1;}
 .hero-sub {font-size:1.05em;color:#5D6D7E;margin-bottom:1.5rem;max-width:600px;}
 .hero-stats {display:flex;gap:1.5rem;flex-wrap:wrap;}
-.stat {text-align:center;background:white;border-radius:10px;padding:12px 20px;border:1px solid #D5E8F3;min-width:120px;}
-.stat-val {font-size:1.8em;font-weight:700;color:#1A3A5C;line-height:1;}
-.stat-label {font-size:0.68em;color:#7F8C8D;margin-top:4px;font-weight:500;line-height:1.3;}
+.stat {text-align:center;background:white;border-radius:10px;padding:12px 20px;border:1px solid #D5E8F3;min-width:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.stat-val {font-size:1.8em;font-weight:700;color:#1A3A5C;line-height:1;text-align:center;width:100%;}
+.stat-label {font-size:0.68em;color:#7F8C8D;margin-top:4px;font-weight:500;line-height:1.3;text-align:center;width:100%;}
 
 .stTabs [data-baseweb="tab-list"] {gap:4px;background:#F8F9FA;border-radius:10px;padding:4px;border:1px solid #E8EDF3;}
 .stTabs [data-baseweb="tab"] {border-radius:7px !important;font-weight:500 !important;padding:8px 20px !important;color:#5D6D7E !important;}
@@ -461,18 +461,18 @@ html, body, [class*="css"] {font-family:'Inter',sans-serif;color:#1A1A2E;}
     border-radius:12px;padding:14px 20px;margin-bottom:1rem;
     display:flex;align-items:center;justify-content:space-between;color:white;
 }
-.session-stat {text-align:center;flex:1;}
-.session-val {font-size:1.6em;font-weight:700;}
-.session-label {font-size:0.65em;opacity:0.8;margin-top:2px;line-height:1.3;}
+.session-stat {text-align:center;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.session-val {font-size:1.6em;font-weight:700;text-align:center;width:100%;}
+.session-label {font-size:0.65em;opacity:0.8;margin-top:2px;line-height:1.3;text-align:center;width:100%;}
 .session-divider {width:1px;background:rgba(255,255,255,0.2);height:40px;flex-shrink:0;}
 
 .impact-section {background:#FAFAFA;border:1px solid #E8EDF3;border-radius:14px;padding:1.4rem 1.6rem;margin-top:1rem;}
 .impact-title {font-size:0.72em;font-weight:700;color:#7F8C8D;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;}
 .impact-grid {display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
-.impact-card {background:white;border:1px solid #E8EDF3;border-radius:10px;padding:12px 14px;text-align:center;}
-.impact-val {font-size:1.4em;font-weight:700;color:#1A3A5C;line-height:1.1;}
-.impact-label {font-size:0.68em;color:#7F8C8D;font-weight:500;margin-top:4px;line-height:1.3;}
-.impact-sub {font-size:0.72em;margin-top:4px;font-weight:600;}
+.impact-card {background:white;border:1px solid #E8EDF3;border-radius:10px;padding:12px 14px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.impact-val {font-size:1.4em;font-weight:700;color:#1A3A5C;line-height:1.1;text-align:center;width:100%;}
+.impact-label {font-size:0.68em;color:#7F8C8D;font-weight:500;margin-top:4px;line-height:1.3;text-align:center;width:100%;}
+.impact-sub {font-size:0.72em;margin-top:4px;font-weight:600;text-align:center;width:100%;}
 .fine-ref {font-size:0.75em;color:#7F8C8D;margin-top:6px;font-style:italic;line-height:1.5;}
 .violation-box {background:white;border-radius:8px;padding:8px 12px;font-size:0.82em;color:#2C3E50;margin-top:8px;line-height:1.6;border:1px solid rgba(0,0,0,0.06);}
 
