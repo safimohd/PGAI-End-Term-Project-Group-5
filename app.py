@@ -530,11 +530,23 @@ st.markdown("""
     <div class="hero-eyebrow">Proof of Concept &nbsp;·&nbsp; Internal Tiger Team &nbsp;·&nbsp; P&amp;GAI Group 5</div>
     <div class="hero-title">AI-Powered <span>RBI Compliance</span><br>at Your Fingertips</div>
     <div class="hero-sub">Ask any Indian banking compliance question. Get answers grounded in actual RBI circulars with citations, confidence scores, and a full audit trail.</div>
-    <div class="hero-stats">
-        <div class="stat"><div class="stat-val">15</div><div class="stat-label">RBI Regulatory Documents</div></div>
-        <div class="stat"><div class="stat-val">+28%</div><div class="stat-label">RAG vs Base LLM<br>5.45 to 6.98 / 8</div></div>
-        <div class="stat"><div class="stat-val">+32%</div><div class="stat-label">Ensemble vs Base LLM<br>5.45 to 7.20 / 8</div></div>
-        <div class="stat"><div class="stat-val">Rs 18.5L</div><div class="stat-label">Avg RBI Penalty per Order<br>304 orders in 2024</div></div>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+        <div style="text-align:center;background:white;border-radius:10px;padding:12px 24px;border:1px solid #D5E8F3;min-width:130px;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:1.8em;font-weight:700;color:#1A3A5C;line-height:1;width:100%;text-align:center;">15</div>
+            <div style="font-size:0.68em;color:#7F8C8D;margin-top:4px;font-weight:500;line-height:1.3;width:100%;text-align:center;">RBI Regulatory Documents</div>
+        </div>
+        <div style="text-align:center;background:white;border-radius:10px;padding:12px 24px;border:1px solid #D5E8F3;min-width:130px;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:1.8em;font-weight:700;color:#1A3A5C;line-height:1;width:100%;text-align:center;">+28%</div>
+            <div style="font-size:0.68em;color:#7F8C8D;margin-top:4px;font-weight:500;line-height:1.3;width:100%;text-align:center;">RAG vs Base LLM<br>5.45 to 6.98 / 8</div>
+        </div>
+        <div style="text-align:center;background:white;border-radius:10px;padding:12px 24px;border:1px solid #D5E8F3;min-width:130px;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:1.8em;font-weight:700;color:#1A3A5C;line-height:1;width:100%;text-align:center;">+32%</div>
+            <div style="font-size:0.68em;color:#7F8C8D;margin-top:4px;font-weight:500;line-height:1.3;width:100%;text-align:center;">Ensemble vs Base LLM<br>5.45 to 7.20 / 8</div>
+        </div>
+        <div style="text-align:center;background:white;border-radius:10px;padding:12px 24px;border:1px solid #D5E8F3;min-width:130px;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:1.8em;font-weight:700;color:#1A3A5C;line-height:1;width:100%;text-align:center;">Rs 18.5L</div>
+            <div style="font-size:0.68em;color:#7F8C8D;margin-top:4px;font-weight:500;line-height:1.3;width:100%;text-align:center;">Avg RBI Penalty per Order<br>304 orders in 2024</div>
+        </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
