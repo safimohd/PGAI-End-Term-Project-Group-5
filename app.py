@@ -601,7 +601,7 @@ with tab_ask:
         for q in QUESTIONS:
             d   = CACHE[q]
             tag = " [Recovered]" if d["failing"] else ""
-            q_labels[f"[{d['tier']}]{tag} {q[:72]}..."] = q
+            q_labels[f"[{d['tier']}]{tag} {q}"] = q
         chosen   = st.selectbox("Select question:", list(q_labels.keys()),
                                 label_visibility="collapsed")
         question  = q_labels[chosen]
@@ -802,7 +802,7 @@ with tab_compare:
     for q in QUESTIONS:
         d   = CACHE[q]
         tag = " [Recovered]" if d["failing"] else ""
-        q_labels2[f"[{d['tier']}]{tag} {q[:72]}..."] = q
+        q_labels2[f"[{d['tier']}]{tag} {q}"] = q
     chosen2   = st.selectbox("", list(q_labels2.keys()), label_visibility="collapsed", key="cq")
     question2 = q_labels2[chosen2]
     qd2       = CACHE[question2]
@@ -863,7 +863,7 @@ with tab_audit:
     for q in QUESTIONS:
         d   = CACHE[q]
         tag = " [Recovered]" if d["failing"] else ""
-        q_labels3[f"[{d['tier']}]{tag} {q[:72]}..."] = q
+        q_labels3[f"[{d['tier']}]{tag} {q}"] = q
     chosen3   = st.selectbox("", list(q_labels3.keys()), label_visibility="collapsed", key="aq")
     question3 = q_labels3[chosen3]
     qd3       = CACHE[question3]
